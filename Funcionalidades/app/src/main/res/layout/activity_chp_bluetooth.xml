@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChpBluetooth">
+
+    <Button
+        android:id="@+id/btnVerificaProx"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Verificar dispositivos próximos"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerificaPareados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerificaPareados"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Verificar dispositivos pareados"
+        app:layout_constraintBottom_toTopOf="@+id/btnParear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnParear"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Parear um novo dispositivo"
+        app:layout_constraintBottom_toTopOf="@+id/btnPacote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPacote"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="92dp"
+        android:text="Enviar / Receber pacote"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAtivaBT"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="50dp"
+        android:text="Ativar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerificaProx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBluetooth2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Bluetooth"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAtivaBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
