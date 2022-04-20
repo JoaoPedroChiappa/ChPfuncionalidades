@@ -6,13 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".ChpSensores">
 
+    <EditText
+        android:id="@+id/rspTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rspPressao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rspPosicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnPressao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/btnPosicao"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Posição"
-        app:layout_constraintBottom_toTopOf="@+id/btnLuz"
+        app:layout_constraintBottom_toTopOf="@+id/rspPosicao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -21,9 +56,9 @@
         android:id="@+id/btnMovimento"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Movimento"
-        app:layout_constraintBottom_toTopOf="@+id/btnPosicao"
+        app:layout_constraintBottom_toTopOf="@+id/rspMovimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,9 +67,9 @@
         android:id="@+id/btnLuz"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:text="Luz"
-        app:layout_constraintBottom_toTopOf="@+id/btnPressao"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -43,9 +78,9 @@
         android:id="@+id/btnPressao"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Pressão"
-        app:layout_constraintBottom_toTopOf="@+id/btnTemperatura"
+        app:layout_constraintBottom_toTopOf="@+id/rspPressao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -54,9 +89,9 @@
         android:id="@+id/btnTemperatura"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="24dp"
         android:text="Temperatura"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltar5"
+        app:layout_constraintBottom_toTopOf="@+id/rspTemp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -65,7 +100,7 @@
         android:id="@+id/btnSensores2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:text="Sensores"
         android:textAlignment="center"
         android:textSize="18dp"
@@ -74,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnVoltar5"
@@ -85,5 +120,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rspMovimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnPosicao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

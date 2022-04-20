@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class ChpSensores extends AppCompatActivity {
 
@@ -18,6 +19,11 @@ public class ChpSensores extends AppCompatActivity {
         Button btnPressao = (Button) findViewById(R.id.btnPressao);
         Button btnTemperatura = (Button) findViewById(R.id.btnTemperatura);
         Button btnVoltar5 = (Button) findViewById(R.id.btnVoltar5);
+
+        EditText rspMovimento = (EditText) findViewById(R.id.rspMovimento);
+        EditText rspPosicao = (EditText) findViewById(R.id.rspPosicao);
+        EditText rspPressao = (EditText) findViewById(R.id.rspPressao);
+        EditText rspTemp = (EditText) findViewById(R.id.rspTemp);
 
         btnVoltar5.setOnClickListener(new View.OnClickListener() {
             @Override
