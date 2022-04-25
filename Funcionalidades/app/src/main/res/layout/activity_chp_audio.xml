@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".ChpAudio">
 
     <Button
@@ -43,6 +44,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
         android:text="Tocar Áudio"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnReproduzAudio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,6 +58,8 @@
         android:text="ÁUDIO"
         android:textAlignment="center"
         android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/txtGravaAudio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -79,6 +84,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
         android:text="Gravar Áudio"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnGravaAudio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".ChpBluetooth">
 
     <Button
@@ -69,6 +70,8 @@
         android:text="Bluetooth"
         android:textAlignment="center"
         android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnAtivaBT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

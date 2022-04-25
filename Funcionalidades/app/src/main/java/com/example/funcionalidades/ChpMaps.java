@@ -2,6 +2,7 @@ package com.example.funcionalidades;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -53,7 +54,7 @@ public class ChpMaps extends AppCompatActivity implements LocationListener{
         btnVoltar4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                startActivity(new Intent(ChpMaps.this, ChpMain.class));
             }
         });
 

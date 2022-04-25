@@ -1,6 +1,7 @@
 package com.example.funcionalidades;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
@@ -34,7 +35,7 @@ public class ChpAudio extends AppCompatActivity {
         btnVoltar2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                startActivity(new Intent(ChpAudio.this, ChpMain.class));
             }
         });
 

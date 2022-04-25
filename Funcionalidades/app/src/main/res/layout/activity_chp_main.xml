@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".ChpMain">
 
     <Button
@@ -45,6 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="ÁUDIO"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnAudio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,6 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="CÂMERA"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnCamera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -88,6 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="WIFI"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnWifi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -99,6 +106,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="BLUETOOTH"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnBluetooth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -109,6 +118,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="MAPS"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnMaps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -120,6 +131,8 @@
         android:layout_marginBottom="12dp"
         android:text="PROJETO FUNCIONALIDADES"
         android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/txtWifi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,6 +145,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="Sensores"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnSensores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -153,6 +168,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
         android:text="DADOS MÓVEIS"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnDadosMoveis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

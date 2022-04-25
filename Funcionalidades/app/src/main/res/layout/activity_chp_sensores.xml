@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".ChpSensores">
 
     <EditText
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnLuz"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnTemperatura"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnPressao"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,6 +108,8 @@
         android:text="Sensores"
         android:textAlignment="center"
         android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/cardview_dark_background"
         app:layout_constraintBottom_toTopOf="@+id/btnMovimento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -128,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btnPosicao"
         app:layout_constraintEnd_toEndOf="parent"

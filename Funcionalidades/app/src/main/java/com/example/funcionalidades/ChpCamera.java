@@ -43,14 +43,10 @@ public class ChpCamera extends AppCompatActivity {
         Button btnGaleria = (Button) findViewById(R.id.btnGaleria);
         Button btnVoltar = (Button) findViewById(R.id.btnVoltar);
 
-        //Pedir permissões
-
-
-
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                startActivity(new Intent(ChpCamera.this, ChpMain.class));
             }
         });
 

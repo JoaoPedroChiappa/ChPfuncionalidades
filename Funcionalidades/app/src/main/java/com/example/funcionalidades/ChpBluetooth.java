@@ -2,6 +2,7 @@ package com.example.funcionalidades;
 
 import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,7 @@ public class ChpBluetooth extends AppCompatActivity {
         btnVoltar3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                startActivity(new Intent(ChpBluetooth.this, ChpMain.class));
             }
         });
 

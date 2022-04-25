@@ -1,5 +1,6 @@
 package com.example.funcionalidades;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,7 @@ public class ChpSensores extends AppCompatActivity {
         btnVoltar5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                startActivity(new Intent(ChpSensores.this, ChpMain.class));
             }
         });
     }

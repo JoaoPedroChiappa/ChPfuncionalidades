@@ -106,7 +106,7 @@ public class ChpMain extends AppCompatActivity {
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.exit(0);
+                moveTaskToBack(true);
             }
         });
 
