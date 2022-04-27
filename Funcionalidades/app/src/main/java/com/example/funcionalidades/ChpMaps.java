@@ -87,14 +87,19 @@ public class ChpMaps extends AppCompatActivity implements LocationListener{
         });
     }
 
-    @SuppressLint("MissingPermission")
     private void getLocation(){
-
-        try{
-            locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, ChpMaps.this);
-        }catch (Exception e){
-            e.printStackTrace();
+        if (ContextCompat.checkSelfPermission(ChpMaps.this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(ChpMaps.this, new String[]{
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+            }, 100);
+        } else {
+            try {
+                locationManager = (LocationManager) getApplicationContext().getSystemService(LOCATION_SERVICE);
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, ChpMaps.this);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
     }

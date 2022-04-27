@@ -19,8 +19,6 @@ import java.lang.reflect.Method;
 
 public class ChpMain extends AppCompatActivity {
 
-    WifiManager wifiManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +33,9 @@ public class ChpMain extends AppCompatActivity {
         Button btnSensores = (Button) findViewById(R.id.btnSensores);
         Button btnFinalizar = (Button) findViewById(R.id.btnFinalizar);
 
-        wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 
-        if(wifiManager.isWifiEnabled()){
+        if(wifi.isWifiEnabled()){
             btnWifi.setText("Desativar");
         }else {
             btnWifi.setText("Ativar");
@@ -46,12 +44,19 @@ public class ChpMain extends AppCompatActivity {
         btnWifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(wifiManager.isWifiEnabled()){
-                    btnWifi.setText("Ativar");
-                    wifiManager.setWifiEnabled(false);
-                }else {
-                    btnWifi.setText("Desativar");
-                    wifiManager.setWifiEnabled(true);
+                if (ContextCompat.checkSelfPermission(ChpMain.this, Manifest.permission.CHANGE_WIFI_STATE)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(ChpMain.this, new String[]{
+                            Manifest.permission.CHANGE_WIFI_STATE
+                    }, 100);
+                } else {
+                    if (wifi.isWifiEnabled()) {
+                        btnWifi.setText("Ativar");
+                        wifi.setWifiEnabled(true);
+                    } else {
+                        btnWifi.setText("Desativar");
+                        wifi.setWifiEnabled(false);
+                    }
                 }
             }
         });
@@ -111,4 +116,6 @@ public class ChpMain extends AppCompatActivity {
         });
 
     }
+
+
 }

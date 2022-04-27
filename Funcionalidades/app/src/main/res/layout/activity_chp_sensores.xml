@@ -7,6 +7,16 @@
     android:background="@color/cardview_dark_background"
     tools:context=".ChpSensores">
 
+    <Button
+        android:id="@+id/btnLuzOff"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="32dp"
+        android:text="Desligar Luz"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <EditText
         android:id="@+id/rspTemp"
         android:layout_width="wrap_content"
@@ -15,7 +25,7 @@
         android:ems="10"
         android:textColor="@color/white"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnLuz"
+        app:layout_constraintBottom_toTopOf="@+id/btnLuzOn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -68,14 +78,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLuz"
-        android:layout_width="300dp"
+        android:id="@+id/btnLuzOn"
+        android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="30dp"
-        android:text="Luz"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="32dp"
+        android:text="Ligar Luz"
         app:layout_constraintBottom_toTopOf="@+id/btnVoltar5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintEnd_toStartOf="@+id/btnLuzOff"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
